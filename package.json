@@ -1,6 +1,6 @@
 {
   "name": "gql-api-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Graphql Client Library",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
