@@ -16,8 +16,8 @@
     "rootDir": "src",
     "outDir": "dist",
     "lib": [
-      "dom",
-      "es2015"
+      "es2015",
+      "dom"
     ]
     /*  "target": "es5",
       "module": "commonjs",
@@ -29,8 +29,12 @@
       "esModuleInterop": true
     */
   },
+  "include": [
+    "test"
+  ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "test"
   ]
 }
