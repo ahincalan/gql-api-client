@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": false,
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "lib": ["es2015", "dom"]
+    /*  "target": "es5",
+      "module": "commonjs",
+      "declaration": true,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "strict": true,
+      "esModuleInterop": true
+    */
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test"
+  ]
+}

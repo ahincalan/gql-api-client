@@ -1,0 +1,57 @@
+{
+  "name": "gql-api-client",
+  "version": "0.0.1",
+  "description": "Graphql Client Library",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks -r ts-node/register test/**/*.test.ts",
+    "testWithCoverage": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register test/**/*.test.ts && nyc report",
+    "cover": "nyc --reporter html --reporter text -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register test/**/*.test.ts && nyc report",
+    "build": "tsc",
+    "travis-cover": "nyc --reporter lcovonly -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register test/**/*.test.ts && nyc report",
+    "dist": "tsc && cp package.json dist && cp README.md dist && cd dist && npm publish"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahincalan/gql-api-client.git"
+  },
+  "keywords": [
+    "graphql",
+    "api",
+    "client",
+    "request",
+    "library",
+    "lightweight",
+    "simple",
+    "usage"
+  ],
+  "author": "ahincalan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahincalan/gql-api-client/issues"
+  },
+  "homepage": "https://github.com/ahincalan/gql-api-client#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/express": "^4.16.1",
+    "@types/express-graphql": "^0.6.2",
+    "@types/graphql": "^14.0.5",
+    "@types/mocha": "^5.2.5",
+    "@types/node-fetch": "^2.1.4",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "mocha": "^5.2.0",
+    "node-fetch": "^2.3.0",
+    "nyc": "^13.1.0",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  }
+}

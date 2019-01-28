@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.idea
+.editorconfig
+.nyc_output
+coverage
+node_modules
+dist
+test
+package-lock.json
+tslint.json
