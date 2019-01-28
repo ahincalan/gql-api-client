@@ -1,4 +1,6 @@
 import {GqlOptions} from "../types/options";
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
 
 export class GqlClient {
 
