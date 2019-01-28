@@ -11,7 +11,7 @@ Simple usage and lightweight graphql api client. Returning promise type.
 npm install gql-api-client
 ```
 
-##### Usage Examples
+##### Usage Examples 
 ```js
 const request =  new GqlClient(
     {
