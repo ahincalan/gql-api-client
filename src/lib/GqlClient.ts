@@ -1,5 +1,4 @@
 import {GqlOptions} from "../types/options";
-import fetch from "node-fetch";
 
 export class GqlClient {
 

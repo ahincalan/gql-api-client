@@ -16,6 +16,7 @@
     "rootDir": "src",
     "outDir": "dist",
     "lib": [
+      "dom",
       "es2015"
     ]
     /*  "target": "es5",
@@ -29,6 +30,7 @@
     */
   },
   "exclude": [
+    "node_modules",
     "dist",
     "test"
   ]
