@@ -1,3 +1,7 @@
+[![NPM Version][npm-image]][npm-url]
+[![Build Status](https://travis-ci.com/ahincalan/gql-api-client.svg?branch=master)](https://travis-ci.com/ahincalan/gql-api-client)
+[![Coverage Status](https://coveralls.io/repos/github/ahincalan/gql-api-client/badge.svg?branch=master)](https://coveralls.io/github/ahincalan/gql-api-client?branch=master)
+
 ## Graphql API Client
 
 Simple usage and lightweight graphql api client. Returning promise type.
@@ -107,3 +111,7 @@ request.send({id:1}).then((response)=>{
   console.log(response);  
 });
 ```
+
+
+[npm-image]: https://img.shields.io/npm/v/gql-api-client.svg
+[npm-url]: https://npmjs.org/package/gql-api-client
