@@ -120,7 +120,7 @@ describe('GqlClient Test Suite', () => {
             });
             try {
                 client.send({id: 1}).then((response) => {
-                    console.log(response);
+                    //console.log(response);
                 });
             } catch (err) {
                 expect(err).equal('url not found');
