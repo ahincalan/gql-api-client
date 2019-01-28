@@ -1,6 +1,6 @@
 {
   "name": "gql-api-client",
-  "version": "0.0.8",
+  "version": "0.0.7",
   "description": "Graphql Client Library",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -34,9 +34,6 @@
   "bugs": {
     "url": "https://github.com/ahincalan/gql-api-client/issues"
   },
-  "entry": [
-    "whatwg-fetch"
-  ],
   "homepage": "https://github.com/ahincalan/gql-api-client#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
@@ -56,7 +53,7 @@
     "typescript": "^3.2.4"
   },
   "dependencies": {
-    "@types/whatwg-fetch": "0.0.33",
-    "whatwg-fetch": "^3.0.0"
+    "@types/node-fetch": "^2.1.4",
+    "node-fetch": "^2.3.0"
   }
 }

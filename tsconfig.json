@@ -17,9 +17,6 @@
     "outDir": "dist",
     "lib": [
       "es2015"
-    ],
-    "types": [
-      "whatwg-fetch"
     ]
     /*  "target": "es5",
       "module": "commonjs",

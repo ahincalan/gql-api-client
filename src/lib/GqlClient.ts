@@ -1,5 +1,5 @@
 import {GqlOptions} from "../types/options";
-import "whatwg-fetch";
+import fetch from "node-fetch";
 
 export class GqlClient {
 
@@ -99,7 +99,7 @@ export class GqlClient {
             headers: headers
         };
 
-        return fetch(this.url, fb).then(async (response: any) => {
+        return fetch(this.url, fb).then(async response => {
             return {
                 ...await response.json(),
                 ...{
@@ -108,7 +108,7 @@ export class GqlClient {
                     headers: response.headers
                 }
             };
-        }).then((res: any) => {
+        }).then(res => {
             return res;
         });
     }
