@@ -8,6 +8,7 @@ AUTHORS
 .idea
 src
 ROADMAP.md
+test
 
 # ignore .js.map files
 *.js.map
